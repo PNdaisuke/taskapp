@@ -113,11 +113,29 @@
                                     <constraint firstAttribute="height" constant="120" id="Tji-jr-g3t"/>
                                 </constraints>
                             </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sb8-zD-lEb">
+                                <rect key="frame" x="10" y="495" width="355" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="JOL-j4-vEx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQw-7R-Lpj">
+                                <rect key="frame" x="10" y="464" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="npb-iw-UYI" firstAttribute="trailing" secondItem="aQw-7R-Lpj" secondAttribute="trailing" constant="10" id="04A-kb-K7k"/>
                             <constraint firstItem="S8V-Gs-afG" firstAttribute="top" secondItem="npb-iw-UYI" secondAttribute="top" constant="10" id="5Cb-d9-lPH"/>
                             <constraint firstItem="npb-iw-UYI" firstAttribute="trailing" secondItem="0Ue-TV-TtG" secondAttribute="trailing" constant="10" id="9Y6-dS-RLB"/>
+                            <constraint firstItem="aQw-7R-Lpj" firstAttribute="leading" secondItem="npb-iw-UYI" secondAttribute="leading" constant="10" id="BgR-Fb-J5i"/>
+                            <constraint firstItem="aQw-7R-Lpj" firstAttribute="top" secondItem="gOr-69-hNh" secondAttribute="bottom" constant="10" id="H4K-2l-BGk"/>
+                            <constraint firstItem="Sb8-zD-lEb" firstAttribute="top" secondItem="aQw-7R-Lpj" secondAttribute="bottom" constant="10" id="H9H-Ob-vDZ"/>
                             <constraint firstItem="TWM-6A-gCf" firstAttribute="top" secondItem="S8V-Gs-afG" secondAttribute="bottom" constant="10" id="HGM-aj-D67"/>
                             <constraint firstItem="0Ue-TV-TtG" firstAttribute="top" secondItem="wFU-Ew-pkI" secondAttribute="bottom" constant="10" id="J15-DS-gMd"/>
                             <constraint firstItem="npb-iw-UYI" firstAttribute="trailing" secondItem="S8V-Gs-afG" secondAttribute="trailing" constant="10" id="K2H-IT-LNA"/>
@@ -131,11 +149,14 @@
                             <constraint firstItem="gOr-69-hNh" firstAttribute="leading" secondItem="npb-iw-UYI" secondAttribute="leading" id="krb-tU-vOU"/>
                             <constraint firstItem="TWM-6A-gCf" firstAttribute="leading" secondItem="npb-iw-UYI" secondAttribute="leading" constant="10" id="oII-Fe-LGp"/>
                             <constraint firstItem="0Ue-TV-TtG" firstAttribute="leading" secondItem="npb-iw-UYI" secondAttribute="leading" constant="10" id="r5Q-l8-x1J"/>
+                            <constraint firstItem="Sb8-zD-lEb" firstAttribute="leading" secondItem="npb-iw-UYI" secondAttribute="leading" constant="10" id="sQa-6K-GAD"/>
+                            <constraint firstItem="npb-iw-UYI" firstAttribute="trailing" secondItem="Sb8-zD-lEb" secondAttribute="trailing" constant="10" id="wR3-Gz-vkT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="npb-iw-UYI"/>
                     </view>
                     <navigationItem key="navigationItem" id="beJ-BJ-VTD"/>
                     <connections>
+                        <outlet property="categoryTextField" destination="Sb8-zD-lEb" id="awz-gV-MfC"/>
                         <outlet property="contentsTextView" destination="0Ue-TV-TtG" id="F4c-b4-GF1"/>
                         <outlet property="datePicker" destination="gOr-69-hNh" id="Dw8-pv-1yM"/>
                         <outlet property="titleTextField" destination="TWM-6A-gCf" id="naH-yj-6Ow"/>
