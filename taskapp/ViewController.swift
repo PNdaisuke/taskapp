@@ -87,9 +87,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let dateString:String = formatter.string(from: task.date)
         cell.detailTextLabel?.text = dateString
         
-        let task2 = taskArray[indexPath.row]
-        cell.textLabel?.text = task2.category
-        
         return cell
         
     }
