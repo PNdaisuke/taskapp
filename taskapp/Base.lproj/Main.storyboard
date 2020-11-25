@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" text="" id="SH3-zg-m6Z">
+                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w1O-6W-oXJ">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="132" width="375" height="646"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <searchBar key="tableFooterView" contentMode="redraw" id="SH3-zg-m6Z">
-                                    <rect key="frame" x="0.0" y="112" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Fh8-7w-FmN" detailTextLabel="ac3-Z4-Lal" style="IBUITableViewCellStyleSubtitle" id="XEb-wg-L9r">
                                         <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
@@ -54,9 +54,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w1O-6W-oXJ" secondAttribute="bottom" id="6xT-EC-rs8"/>
-                            <constraint firstItem="w1O-6W-oXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cz3-a2-gGp"/>
                             <constraint firstItem="w1O-6W-oXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kyu-IS-U7O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w1O-6W-oXJ" secondAttribute="trailing" id="Lk9-CO-b8K"/>
+                            <constraint firstItem="w1O-6W-oXJ" firstAttribute="top" secondItem="SH3-zg-m6Z" secondAttribute="bottom" id="v9J-aq-50L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -68,6 +68,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="seachField" destination="SH3-zg-m6Z" id="uWn-91-TMw"/>
                         <outlet property="tableView" destination="w1O-6W-oXJ" id="Zju-cq-p3t"/>
                         <segue destination="yzm-Xa-X4y" kind="show" identifier="cellSegue" id="RTm-rK-RwJ"/>
                     </connections>
